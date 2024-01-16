@@ -156,8 +156,6 @@
 
     /* main */
     /* popular style start */
-
-
     .popular-section{
         display: flex;
         justify-content: space-between;
@@ -213,6 +211,51 @@
         width: 100%;
         height: 550px;
     }
+    /* popular style end */
+
+    /* destination style start */
+
+    .row-common{
+        display: flex;
+        gap: 24px;
+    }
+
+    .row-common img{
+        margin-top: 24px;
+        width: 100%;
+    }
+
+    .destination-content h2{
+        color: #131318;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+
+    .destination-content p{
+        color: rgba(19, 19, 24, 0.70);
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 26px;
+        max-width: 643px;
+        margin: 24px auto;
+    }
+
+    .city-name{
+        display: none;
+        position: absolute;
+        top: 100px;
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+
+    /* destination style end */
+
+
 
 
 
@@ -261,7 +304,9 @@
         .popular-section{
             flex-direction: column;
         }
-
+        .popular-img img{
+            margin-top: 50px;
+        }
         .mobile-desc{
             font-size: .9rem;
             min-width: 200px;
@@ -274,7 +319,10 @@
 
         .popular-img img{
             height: auto;
-            margin-top: 24px;
+            /* margin-top: 24px; */
         }
 
+        .row-common{
+            flex-direction: column;
+        }
     }
