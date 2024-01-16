@@ -8,8 +8,14 @@
     }
 
     /* Header style start */
+
+
     .mobile{
         display: none;
+    }
+
+    .nav-left i{
+        color: #FF5400;
     }
 
     .nav{
@@ -225,14 +231,14 @@
         width: 100%;
     }
 
-    .destination-content h2{
+    .section-title{
         color: #131318;
         text-align: center;
         font-size: 2.5rem;
         font-weight: 800;
     }
 
-    .destination-content p{
+    .section-desc{
         color: rgba(19, 19, 24, 0.70);
         text-align: center;
         font-size: 1rem;
@@ -251,9 +257,176 @@
         font-size: 28px;
         font-weight: 800;
     }
-
-
     /* destination style end */
+
+    /* why choose us style start */
+    .card{
+        border-radius: 16px;
+        width: 500px;
+        height: 284px;
+    }
+    
+    .card h3{
+        color: #131318;
+        font-size: 1.2rem;
+        font-weight: 800;
+        margin-left: 32px;
+    }
+
+    .card p{
+        color: #5A5A5D;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 26px;
+        margin-top: 16px;
+        margin-left: 32px;
+        margin-bottom: 32px;
+    }
+
+    .card-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-1{
+        border-radius: 16px;
+        border: 1px solid rgba(251, 181, 99, 0.20);
+        background: rgba(251, 181, 99, 0.05);
+    }
+
+    .card-2{
+        border-radius: 16px;
+        border: 1px solid rgba(41, 206, 246, 0.20);
+        background: rgba(41, 206, 246, 0.05);
+    }
+
+    .card-3{
+        border-radius: 16px;
+        border: 1px solid rgba(233, 68, 68, 0.20);
+        background: rgba(233, 68, 68, 0.05);
+    }
+
+    .choose-us-container{
+        margin-top: 100px;
+    }
+
+    .card i{
+        margin: 32px;
+    }
+
+    .card-bt{
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+    }
+    /* why choose us style end */
+
+    /* news letter style  start*/
+    .news-letter{
+        display: flex;
+        gap: 24px;
+    }
+
+    .news-content{
+        max-width: 474px;
+        min-width: 356px;
+    }
+
+    .letter-content{
+        padding: 40px;
+        border-radius: 16px;
+        border: 1px solid #FF5400;
+    }
+
+    .letter-img img{
+        width: 100%;
+    }
+
+    .letter-content h3{
+        color: #131318;
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .letter-content p{
+        color: #5A5A5D;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 26px;
+        margin-top: 16px;
+        max-width: 350px;
+    }
+
+    .hr-1{
+        background: rgba(19, 19, 24, 0.10);
+        max-width: 393px;
+        height: 1px;
+        margin: 24px 0;
+    }
+
+    .letter-content input{
+        width: 393px;
+        height: 52px;
+        border-radius: 8px;
+        background: rgba(19, 19, 24, 0.05);
+        border: none;
+        color: rgba(19, 19, 24, 0.30);
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 16px;
+    }
+    #input{
+        margin-top: 16px;
+    }
+
+    .letter-content .sub{
+        color: #FFF;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 800;
+        width: 393px;
+        height: 52px;
+        border-radius: 8px;
+        background: #FF5400;
+        border: none;
+        margin-top: 24px;
+    }
+
+    .disc{
+        width: 324px;
+        height: 120px;
+        transform: rotate(-19.628deg);
+        flex-shrink: 0;
+
+        border-radius: 16px;
+        background: #FF5400;
+    }
+
+    .disc h2{
+        color: #FFF;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 15px;
+    }
+
+    .disc p{
+        color: #FFF;
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .dis{
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        margin-right: 20px;
+        bottom: 178px;
+    }
+    /* news letter style  end*/
+    
 
 
 
@@ -322,7 +495,25 @@
             /* margin-top: 24px; */
         }
 
-        .row-common{
+        .row-common,
+        .card-container
+        {
             flex-direction: column;
         }
+
+        .card{
+            width: auto;
+        }
+        .card-2{
+            margin-top: 24px;
+        }
+
+        .news-letter{
+            flex-direction: column;
+        }
+
+        .letter-content input, .letter-content .sub{
+            width: 300px;
+        }
+
     }
