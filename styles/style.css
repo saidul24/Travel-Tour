@@ -430,7 +430,6 @@
     /* footer style start */
 
     footer{
-        border: 1px saddlebrown solid;
         width: 100%;
         margin: 0 auto;
         margin-top: 100px;
@@ -444,7 +443,7 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        margin-top: 90px;
+        padding-top: 90px;
     }
 
     .footer-head p{
@@ -486,22 +485,6 @@
     }
 
     /* footer style end */
-
-    /* perfect style start */
-    .perfect-content .btn{
-        border-radius: 8px;
-        background: #FF5400;
-        color: #FFF;
-        font-size: 1.25rem;
-        font-weight: 800;
-        border: none;
-        width: 174px;
-        height: 52px;
-        margin-top: 32px; 
-    }
-    /* perfect style end */
-
-
 
 
     /* Responsive For mobile */
@@ -604,7 +587,7 @@
         }
 
         .row-common img{
-            max-width: 355px;
+            min-width: 355px;
             height: 176px;
             border: 16px;
         }
