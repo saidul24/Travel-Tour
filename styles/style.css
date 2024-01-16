@@ -487,12 +487,19 @@
 
     /* footer style end */
 
-
-
-
-
-
-
+    /* perfect style start */
+    .perfect-content .btn{
+        border-radius: 8px;
+        background: #FF5400;
+        color: #FFF;
+        font-size: 1.25rem;
+        font-weight: 800;
+        border: none;
+        width: 174px;
+        height: 52px;
+        margin-top: 32px; 
+    }
+    /* perfect style end */
 
 
 
@@ -550,7 +557,7 @@
 
         .popular-img img{
             height: auto;
-            /* margin-top: 24px; */
+
         }
 
         .row-common,
@@ -597,14 +604,12 @@
         }
 
         .row-common img{
-            max-width: 335px;
-            max-height: 176px;
+            max-width: 355px;
+            height: 176px;
             border: 16px;
         }
 
-
-
-
-        
-
+        .row-common{
+            gap: 0;
+        }
     }
