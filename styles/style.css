@@ -8,6 +8,10 @@
     }
 
     /* Header style start */
+    .mobile{
+        display: none;
+    }
+
     .nav{
         display: flex;
         justify-content: space-between;
@@ -94,6 +98,7 @@
 
     .banner-input{
         display: flex;
+        flex-wrap: wrap;
         padding: 16px;
         gap: 24px;
         border-radius: 8px;
@@ -128,4 +133,75 @@
         margin: 14px 15px;
     }
 
+    .bbtn{
+        justify-content: space-evenly;
+        border-radius: 8px;
+        background: #FF5400;
+    }
+
+    .bbtn .btn{
+        color: #FFF;
+        font-size: 1rem;
+        font-weight: 700;
+        border: none;
+        background: #FF5400;
+        margin-right: 20px;
+    }
+
+    .bbtn .bicon{
+            margin-left: 20px;
+            color: #FFF; 
+    }
+
+
+    
     /* Header style end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Responsive For mobile */
+
+    @media screen and (max-width: 576px) {
+
+        header{
+            width: 90%;
+        }
+        .pc{
+            display: none;
+        }
+
+        .mobile{
+            display: block;
+        }
+
+        .banner input{
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .banner .banner-content h2{
+            font-size: 1.37rem;
+            padding-top: 32px;
+        }
+        .banner .banner-content p{
+            font-size: .9rem;
+            margin-top: 8px;
+        }
+
+        .banner-input{
+            width: 287px;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
