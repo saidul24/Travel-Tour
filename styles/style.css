@@ -18,7 +18,7 @@
         align-items: center;
     }
 
-    header{
+    .container{
         max-width: 1170px;
         width: 81%;
         margin: 50px auto;
@@ -30,11 +30,11 @@
         column-gap: 1rem;
     }
 
-    .nav-right li{
+    .nav-right .nav-li{
         display: inline;
     }
 
-    .nav-right li a{
+    .nav-right .nav-li a{
         text-decoration: none;
         color:#424247;
         font-size: 1.1rem;
@@ -42,7 +42,7 @@
         margin-left: 2.8rem;
     }
 
-    .nav-left i{
+    .nav-left .nav-li{
         width: 48px;
         color: #FF5400;
     }
@@ -151,14 +151,68 @@
     .bbtn .bicon{
             margin-left: 20px;
             color: #FFF; 
-    }
-
-
-    
+    }    
     /* Header style end */
 
+    /* main */
+    /* popular style start */
 
 
+    .popular-section{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .popular-content h2{
+        color: #131318;
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+
+    .popular-content .popular-desc{
+        color: rgba(19, 19, 24, 0.70);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 26px; 
+        max-width: 577px;
+        margin: 24px 0;
+    }
+
+    .popular-ul li{
+        color: rgba(19, 19, 24, 0.70);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        max-width: 525px;
+        margin: 16px 20px;
+    }
+
+    .popular-content .popular-bt{
+        max-width: 525px;
+        color: #5A5A5D;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 26px;
+        margin-top: 24px;      
+    }
+
+    .popular-content .btn{
+        border-radius: 8px;
+        background: #FF5400;
+        color: #FFF;
+        font-size: 1.25rem;
+        font-weight: 800;
+        border: none;
+        width: 174px;
+        height: 52px;
+        margin-top: 32px;
+    }
+
+    .popular-img img{
+        width: 100%;
+        height: 550px;
+    }
 
 
 
@@ -202,6 +256,25 @@
             width: 287px;
             align-items: center;
             justify-content: center;
+        }
+
+        .popular-section{
+            flex-direction: column;
+        }
+
+        .mobile-desc{
+            font-size: .9rem;
+            min-width: 200px;
+        }
+
+        .popular-content h2{
+            font-size: 1.3rem;
+        }
+
+
+        .popular-img img{
+            height: auto;
+            margin-top: 24px;
         }
 
     }
